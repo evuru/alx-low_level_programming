@@ -13,6 +13,7 @@ int main(void)
 	int j;
 	int k;
 	int l;
+
 	i = 48;
 	j = 48;
 	k = 48;
