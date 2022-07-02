@@ -29,12 +29,14 @@ int main(void)
 			putchar('\n');
 			i++;
 		}
-		else{
+		else
+		{
 			putchar(44);
 			putchar(32);
 			if ((k == 57) && (l == 57))
 			{
-				if (j < 56){
+				if (j < 56)
+				{
 					l = ++j + 1;
 					k = i;
 				}
