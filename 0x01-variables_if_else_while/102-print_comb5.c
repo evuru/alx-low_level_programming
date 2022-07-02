@@ -9,14 +9,9 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i, int j, int k, int l;
 
-	i = 48,j = 48;
-	k = 48;
-	l = 49;
+	i = 48, j = 48, k = 48, l = 49;
 	while  ((i < 58))
 	{
 		putchar(i);
