@@ -17,7 +17,7 @@ int main(void)
 
 	i = 48;
 	j = 48;
-	k = 48; 
+	k = 48;
 	l = 49;
 	while  ((i < 58))
 	{
@@ -34,7 +34,8 @@ int main(void)
 		}
 		else
 		{
-			putchar(44); putchar(32);
+			putchar(44);
+			putchar(32);
 			if ((k == 57) && (l == 57))
 			{
 				if (j < 56)
@@ -44,7 +45,8 @@ int main(void)
 				}
 				else if (j == 56)
 				{
-					j++; k = i + 1; 
+					j++;
+					k = i + 1; 
 					l = 48;
 				}
 				else if (j == 57)
