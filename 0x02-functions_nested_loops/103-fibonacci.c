@@ -7,22 +7,21 @@
  */
 int main(void)
 {
-	long int a, b, c, d;
+	unsigned int a, b, c, d, s;
 
 	a = 1;
 	b = 2;
-	c = 3;
-
-	printf("%ld, ", a);
-	printf("%ld, ", b);
-	for (d = 3; d < 50; d++)
+	s = 0;
+	for (d = 1; d <= 33; d++)
 	{
-		printf("%ld, ", c);
+		if (a < 4000000 && a % 2 == 0){
+			s = s + a;
+		}
+		c = a + b;
 		a = b;
 		b = c;
-		c = a + b;
 	}
-	printf("%ld\n", c);
+	printf("%u\n", s);
 	return (0);
 }
 
