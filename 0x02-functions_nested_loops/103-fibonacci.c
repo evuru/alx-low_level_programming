@@ -14,9 +14,8 @@ int main(void)
 	s = 0;
 	for (d = 1; d <= 33; d++)
 	{
-		if (a < 4000000 && a % 2 == 0){
+		if (a < 4000000 && a % 2 == 0)
 			s = s + a;
-		}
 		c = a + b;
 		a = b;
 		b = c;
