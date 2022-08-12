@@ -1,15 +1,33 @@
-#include <stdio.h>
-
-void first(void) __attribute__ ((constructor));
+#include "lists.h"
+#include <string.h>
 
 /**
- * first - prints something before main
+ * add_node - appends a node to the head
+ * @head: address to a node list_t
+ * @str: a string to add to the lists content
  *
- * Return: void
+ * Return: pointer to a list_t.
  */
-void first(void)
+list_t *add_node(list_t **head, const char *str)
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	list_t *new;
+	size_t len = 0;
+
+	new = malloc(sizeof(list_t));
+	if (!new)
+		return (NULL);
+
+	while (str[len])
+		len++;
+	new->len = len;
+
+	new->str = strdup(str);
+	if (!(*head))
+		new->next = NULL;
+	else
+		new->next = *head;
+	*head = new;
+
+	return (*head);
 }
 
